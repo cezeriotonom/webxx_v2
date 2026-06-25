@@ -9,24 +9,24 @@ const ROWS = 20;
 
 const COLORS = [
     null,
-    '#00f0f0', // I (Cyan)
-    '#f0a000', // L (Orange)
-    '#0000f0', // J (Blue)
-    '#f0f000', // O (Yellow)
-    '#f00000', // Z (Red)
-    '#00f000', // S (Green)
-    '#a000f0'  // T (Purple)
+    '#4db6ac', // I (Soft Teal)
+    '#ffb74d', // L (Soft Amber)
+    '#64b5f6', // J (Soft Indigo)
+    '#ffd54f', // O (Soft Gold)
+    '#e57373', // Z (Soft Coral)
+    '#81c784', // S (Soft Emerald)
+    '#ba68c8'  // T (Soft Plum)
 ];
 
 const BORDER_COLORS = [
     null,
-    '#00a3a3',
-    '#a36d00',
-    '#0000a3',
-    '#a3a300',
-    '#a30000',
-    '#00a300',
-    '#6d00a3'
+    '#00796b',
+    '#f57c00',
+    '#1976d2',
+    '#fbc02d',
+    '#d32f2f',
+    '#388e3c',
+    '#7b1fa2'
 ];
 
 let arena = createMatrix(COLS, ROWS);
@@ -105,16 +105,16 @@ function drawBlock(ctx, val, x, y, size) {
     ctx.fillStyle = COLORS[val];
     ctx.fillRect(x * size, y * size, size, size);
     
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 1.5;
     ctx.strokeStyle = BORDER_COLORS[val];
     ctx.strokeRect(x * size + 1, y * size + 1, size - 2, size - 2);
 
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
-    ctx.fillRect(x * size + 2, y * size + 2, size - 4, size / 4);
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.08)';
+    ctx.fillRect(x * size + 2, y * size + 2, size - 4, size / 5);
 }
 
 function draw() {
-    context.fillStyle = '#050508';
+    context.fillStyle = '#0c0d14';
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     drawGrid();
@@ -153,7 +153,7 @@ function drawMatrix(ctx, matrix, offset, size) {
 }
 
 function drawNext() {
-    nextContext.fillStyle = '#050508';
+    nextContext.fillStyle = '#0c0d14';
     nextContext.fillRect(0, 0, nextCanvas.width, nextCanvas.height);
 
     if (!player.nextMatrix) return;
@@ -337,7 +337,7 @@ function update(time = 0) {
 function handleGameOver() {
     gameOver = true;
     document.getElementById('overlay-title').innerText = "OYUN BİTTİ!";
-    document.getElementById('overlay-text').innerHTML = `Toplam Skor: <span style="color:#ffaa00">${score}</span><br>Seviye: ${level}<br><br>Yeniden başlamak için butona tıklayın`;
+    document.getElementById('overlay-text').innerHTML = `Toplam Skor: <span style="color:#ffd54f">${score}</span><br>Seviye: ${level}<br><br>Yeniden başlamak için butona tıklayın`;
     document.getElementById('start-btn').innerText = "YENİDEN BAŞLAT";
     document.getElementById('overlay').classList.remove('hidden');
 }

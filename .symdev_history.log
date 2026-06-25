@@ -34,3 +34,13 @@ güzel olmuş ama daha profesyonel olsun renklerde aşırı cbıldak
 [2026-06-26 00:24:00] [LLM_SUMMARY]
 Oyunun tasarımı ve renk paleti daha profesyonel, göz yormayan ve şık bir görünüme kavuşturuldu. Aşırı parlak (cırtlak) renkler yerine modern, pastel tonlarda bir renk paleti uygulandı ve arayüze 'glassmorphism' (buzlu cam) efekti verilerek kurumsal bir hava katıldı.
 
+[2026-06-26 00:24:03] [USER_CHECKPOINT]
+6954fd443f713b37ce883edb0e439c33115fe209
+güzel olmuş ama daha profesyonel olsun renklerde aşırı cbıldak
+
+[2026-06-26 00:24:56] [USER]
+iyi fena değil ama bence gelen taşın altta gölgesi de gözüksün ve sayfada çok küçük kalmış oyunumuz biraz daha sayfayı doldursun
+
+[2026-06-26 00:25:46] [LLM_SUMMARY]
+Oyun alanı boyutu büyütülerek ekranı daha iyi doldurması sağlandı (blok boyutu 24px'ten 32px'e çıkarılarak oyun alanı 320x640 piksele yükseltildi). Ayrıca taşların nereye düşeceğini önceden gösteren şık ve yarı şeffaf bir 'gölge taş' (ghost piece) mekaniği başarıyla entegre edildi.
+
