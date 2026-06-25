@@ -3,11 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webxx_v2</title>
+    <title>Retro Tetris</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Merhaba, SymDev!</h1>
-    <script src="script.js"></script>
+    <div class="game-container">
+        <div class="side-panel left-panel">
+            <h2>KONTROLLER</h2>
+            <div class="controls-info">
+                <p><span>← / A</span> Sola Hareket</p>
+                <p><span>→ / D</span> Sağa Hareket</p>
+                <p><span>↑ / W / X</span> Döndür (Saat Yönü)</p>
+                <p><span>Z</span> Döndür (Ters Yön)</p>
+                <p><span>↓ / S</span> Yumuşak Düşüş</p>
+                <p><span>Boşluk (Space)</span> Sert Düşüş</p>
+                <p><span>P / Esc</span> Duraklat</p>
+            </div>
+        </div>
+
+        <div class="main-panel">
+            <h1 class="game-title">TETRIS</h1>
+            <div class="canvas-container">
+                <canvas id="tetris" width="240" height="480"></canvas>
+                <div id="overlay" class="overlay">
+                    <div class="overlay-content">
+                        <h2 id="overlay-title">RETRO TETRIS</h2>
+                        <p id="overlay-text">Başlamak için butona tıklayın</p>
+                        <button id="start-btn">OYUNU BAŞLAT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-panel right-panel">
+            <div class="stats-box">
+                <h3>SKOR</h3>
+                <div id="score" class="stat-val">0</div>
+            </div>
+            <div class="stats-box">
+                <h3>SEVİYE</h3>
+                <div id="level" class="stat-val">1</div>
+            </div>
+            <div class="stats-box">
+                <h3>SATIR</h3>
+                <div id="lines" class="stat-val">0</div>
+            </div>
+            <div class="stats-box next-box">
+                <h3>SIRADAKİ</h3>
+                <canvas id="next" width="96" height="96"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
 </body>
 </html>

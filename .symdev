@@ -1,0 +1,18 @@
+{
+  "project_id" : 2180,
+  "project_name" : "webxx_v2",
+  "language" : "WEB",
+  "ai_chat_id" : "1klvVUR8NeBNq7xRC9uT8HaGt9fhduMSX",
+  "active_llm_provider" : "gemini",
+  "ai_chat_sessions" : {
+    "gemini" : "1klvVUR8NeBNq7xRC9uT8HaGt9fhduMSX"
+  },
+  "last_opened" : 1782422378566,
+  "symdev_account_email" : "cezeriotonom@gmail.com",
+  "llm_account_email" : "symdev.basic@gmail.com",
+  "github_repo_url" : "https://github.com/cezeriotonom/webxx_v2.git",
+  "build_command" : "",
+  "run_command" : "",
+  "open_browser_url" : "file:///C:/Users/Teknofest/SymDev_Projects/webxx_v2/index.html",
+  "arduino_board" : null
+}
